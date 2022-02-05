@@ -1,9 +1,27 @@
 @import url(/css/nullstyles.css);
+@import url(/css/blogstyles.css);
+
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;900&display=swap");
 
 body {
+  position: relative;
+
   font-family: "Source Serif 4", sans-serif;
   min-width: 400px;
+}
+
+.test-message {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+
+  color: #c2a227;
+  background-color: #27272f;
+  
+  font-size: 20px;
+  text-transform: uppercase;
+  
+  padding: 40px;
 }
 
 .header-navigation {
@@ -25,12 +43,11 @@ body {
 }
 
 .container {
-  width: 60%;
+  max-width: 1300px;
   margin: auto;
 }
 
 .main {
-  height: 500px;
 }
 
 .main-navigation {
@@ -55,88 +72,140 @@ body {
   padding: 20px 16px;
 }
 
-/* header {
-  height: 55px;
+.main-navigation ul li a:hover {
+  color: #c2a227;
   background-color: #27272f;
-} */
+}
 
-/*
-.header-body {
-  display: table;
+/* ----------------------------------------------- */
 
+.main-body {
+  display: flex;
+
+  padding: 50px 0px;
+}
+
+.col-60 {
   width: 60%;
-  height: 55px;
-
-  margin: auto;
+  margin: 0px 30px;
 }
 
-.header-body > .logo {
-  display: table-cell;
+.col-40 {
+  width: 40%;
 
-  color: #fff;
-  font-size: 30px;
-  vertical-align: middle;
-} */
-
-/* .container {
-  width: 60%;
-  margin: auto;
+  margin: 0px 30px;
 }
 
-.header {
-  display: table;
+/* ----------------------------------------------- */
 
-  width: 100%;
-  height: 200px;
+.block {
+  margin-bottom: 50px;
 }
 
-.header-body {
-  display: table-cell;
-
-  width: 100%;
-
+.block-title {
+  font-size: 18px;
+  text-transform: uppercase;
   text-align: center;
-  vertical-align: middle;
+
+  color: #c2a227;
+  background-color: #27272f;
+
+  padding: 18px;
+  margin-bottom: 20px;
 }
 
-.title {
-  font-size: 50px;
+.block-img > img {
+  width: 100%;
 }
 
-.navigation {
-  border-top: 1px solid rgb(216, 216, 216);
-  border-bottom: 1px solid rgb(216, 216, 216);
+.block-text {
+  font-size: 16px;
+
+  text-align: justify;
+
+  margin: 20px 0px;
+
+  line-height: 20px;
 }
 
-.navigation ul {
-  text-align: center;
-}
+.label {
+  cursor: default;
 
-.navigation ul li {
-  display: inline-block;
-}
-
-.navigation ul li a {
   display: inline-block;
 
-  padding: 20px 16px;
+  text-transform: uppercase;
+
+  border: 1px solid #27272f;
+
+  padding: 5px;
+  margin: 5px 0px;
+}
+
+.label:hover {
+  color: #c2a227;
+  background-color: #27272f;
+  transition-duration: 150ms;
+}
+
+/* ----------------------------------------------- */
+
+.follow-me {
+  text-align: center;
+}
+
+.follow-me-list {
+  text-align: center;
+}
+
+.follow-me-list li {
+  display: inline-block;
+  width: 100px;
+}
+
+.follow-me-list li img {
+  width: 40px;
+}
+
+.follow-me-list li a {
+  display: block;
 
   color: #000;
   text-transform: uppercase;
+
+  margin: 10px 0px 0px 0px;
 }
 
-.navigation ul li a:hover {
-  background-color: rgb(216, 216, 216);
-  transition-duration: 700ms;
+/* ----------------------------------------------- */
+
+.footer {
+  color: #fff;
+  background-color: #27272f;
 }
 
-.navigation ul li a:hover {
-  cursor: pointer;
-}
+.footer-body {
+  display: table;
 
-.body {
+  width: 100%;
   height: 100px;
-} */
+}
+
+.user-name {
+  display: table-cell;
+
+  font-size: 30px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.creator {
+  display: table-cell;
+
+  font-size: 14px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+/* ----------------------------------------------- */
 
 @media (max-width: 400px) {
   .logo {
